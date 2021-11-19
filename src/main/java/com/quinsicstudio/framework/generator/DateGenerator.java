@@ -1,4 +1,4 @@
-package com.qs.framework.generator;
+package com.quinsicstudio.framework.generator;
 
 import java.util.Date;
 

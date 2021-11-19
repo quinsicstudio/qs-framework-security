@@ -1,4 +1,4 @@
-package com.qs.framework.response;
+package com.quinsicstudio.framework.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
