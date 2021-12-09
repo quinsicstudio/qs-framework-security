@@ -2,14 +2,16 @@ package com.quinsicstudio.framework.security.entity.po;
 
 import com.quinsicstudio.framework.base.entity.BasePo;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-@Entity
-@Data
-@Table(name = "um_user")
-public class UserPo extends BasePo {
+@MappedSuperclass
+@Getter
+@Setter
+public class BaseUserPo extends BasePo {
 
     @Id
     @GenericGenerator(name = "um_user_generator", strategy = "com.quinsicstudio.framework.base.generator.SnowflakeIdGenerator")
