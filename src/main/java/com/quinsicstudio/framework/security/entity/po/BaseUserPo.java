@@ -14,8 +14,8 @@ import javax.persistence.*;
 public class BaseUserPo extends BasePo {
 
     @Id
-    @GenericGenerator(name = "um_user_generator", strategy = "com.quinsicstudio.framework.base.generator.SnowflakeIdGenerator")
-    @GeneratedValue(generator = "um_user_generator")
+    @GenericGenerator(name = "um_base_user_generator", strategy = "com.quinsicstudio.framework.base.generator.SnowflakeIdGenerator")
+    @GeneratedValue(generator = "um_base_user_generator")
     @Column(name = "id")
     private Long id;
 }

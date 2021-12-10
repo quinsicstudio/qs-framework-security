@@ -17,4 +17,5 @@ public class AuthenticationPo extends BasePo {
     @GeneratedValue(generator = "um_authentication_generator")
     @Column(name = "id")
     private Long id;
+
 }
