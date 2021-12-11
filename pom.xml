@@ -15,6 +15,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <quinsicstudio.framework.base>0.0.1-SNAPSHOT</quinsicstudio.framework.base>
+        <nimbus-jose-jwt.version>7.3</nimbus-jose-jwt.version>
     </properties>
 
     <distributionManagement>
@@ -27,9 +28,15 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose-jwt.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.quinsicstudio.framework</groupId>
             <artifactId>qs-base</artifactId>
             <version>${quinsicstudio.framework.base}</version>
         </dependency>
+
     </dependencies>
 </project>
