@@ -2,14 +2,18 @@ package com.quinsicstudio.framework.security.entity.po;
 
 
 import com.quinsicstudio.framework.base.entity.BasePo;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
-@Entity
-@Data
-@Table(name = "um_authentication")
+@MappedSuperclass
+@Getter
+@Setter
 public class BaseAuthenticationPo extends BasePo {
 
     @Id
