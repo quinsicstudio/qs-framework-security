@@ -18,4 +18,7 @@ public class BaseUserPo extends BasePo {
     @GeneratedValue(generator = "um_base_user_generator")
     @Column(name = "id")
     private Long id;
+
+    @Column(name = "username")
+    private String username;
 }
