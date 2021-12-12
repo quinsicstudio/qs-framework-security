@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 @Data
 @Table(name = "um_authentication")
-public class AuthenticationPo extends BasePo {
+public class BaseAuthenticationPo extends BasePo {
 
     @Id
     @GenericGenerator(name = "um_authentication_generator", strategy = "com.quinsicstudio.framework.base.generator.SnowflakeIdGenerator")
