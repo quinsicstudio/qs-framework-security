@@ -22,7 +22,7 @@ public class BaseAuthenticationPo extends BasePo {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "id")
+    @Column(name = "credential")
     private String credential;
 
     @Column(name = "auth_type")
